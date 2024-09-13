@@ -6,7 +6,7 @@ import Hero from './Components/Hero';
 import Elevating from './Components/Elevating';
 import Section_3 from './Components/Section_3';
 import Speacialization from './Components/Speacialization';
-import Why_choose from './Components/why_choose';
+import Why_choose from './Components/Why_choose';
 import Expertise from './Components/Expertise';
 import Vision from './Components/Vision';
 import Footer from './Components/Footer';
