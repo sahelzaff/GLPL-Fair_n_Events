@@ -1,0 +1,244 @@
+/* Smooth transition for visibility */
+.transition-transform {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Fixed position styling */
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+}
+
+/* Hide navbar */
+.-translate-y-full {
+  transform: translateY(-100%);
+}
+
+/* Show navbar */
+.translate-y-0 {
+  transform: translateY(0);
+}
+
+
+
+
+
+
+/* button navbar */
+/* From Uiverse.io by Jedi-hongbin */
+button {
+  display: flex;
+  height: 3em;
+  width: 180px;
+  color: white;
+  font-size: 1.1rem;
+  font-family: montserrat;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee4b;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: #C6082C;
+}
+
+button>svg {
+  margin-right: 5px;
+  margin-left: 10px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+}
+
+button:hover>svg {
+  font-size: 1.2em;
+  transform: translateX(-5px);
+}
+
+button:hover {
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #fff;
+  transform: translateY(-2px);
+}
+
+
+#button_1:hover {
+  box-shadow: none;
+  transform: translateY(-2px);
+}
+
+#button_1 {
+  height: 3em;
+  width: 235px;
+  border-radius: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card {
+  position: relative;
+  background-color: white;
+  border: 1px solid #ddd;
+  /* border-radius: 10px; */
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.card-content {
+  padding: 20px;
+  position: relative;
+  /* Ensure content is positioned relative to the card */
+  transition: color 0.3s ease;
+  z-index: 2;
+  /* Ensure content is above the slanted section */
+}
+
+.card-icon,
+.card-items {
+  position: relative;
+  /* Ensure these elements are positioned relative to card-content */
+  z-index: 10;
+  /* Ensure these elements are above the red background */
+}
+
+.card-slant::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  background-color: #c6082c;
+  /* Red color */
+  transform: skewY(-20deg);
+  /* Slanting the rectangle */
+  transform-origin: right;
+  /* Origin of the skew */
+  z-index: 1;
+  /* Place it behind the content */
+  transition: height 0.3s ease, transform 0.4s ease;
+  /* Smooth transition for height and transform */
+}
+
+.card-slant-content {
+  position: absolute;
+  bottom: 10px;
+  /* left: px; */
+  color: white;
+  z-index: 3;
+  /* Ensure this content is above everything else */
+}
+
+.card:hover .card-slant::before {
+  height: 100%;
+  /* Expand the slanted section to fill the card */
+  transform: none;
+  /* Remove skew effect on hover */
+}
+
+.card:hover .card-content {
+  color: white;
+  /* Text turns white on hover */
+}
+
+.card:hover .card-icon,
+.card:hover .card-items {
+  color: white;
+  /* Icons and list items turn white on hover */
+}
+
+.card-items {
+  list-style-type: disc;
+  /* Add bullets to list items */
+  margin-left: 20px;
+  /* Adjust margin for bullets */
+}
+
+.card:hover .card-items {
+  color: white;
+  /* List items turn white on hover */
+}
+
+/* .card:hover{
+    transform: translateY(-25px);
+    transition: transform 0.1s ease-in-out;
+  }
+   */
+
+
+
+/* input footer */
+
+.searchBox {
+  display: flex;
+  max-width: 450px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: #f4f4f4;
+  border-radius: 50px;
+  position: relative;
+}
+
+.searchButton {
+  color: white;
+  position: absolute;
+  right: 8px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--gradient-custom, linear-gradient(90deg, #8A2BE2 0%,  #C6082C 100%));
+  border: 0;
+  display: inline-block;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+/*hover effect*/
+button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+  transform: translateY(-3px);
+}
+
+/*button pressing effect*/
+button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  color: Black;
+  font-family: poppins;
+  font-size: 15px;
+  padding: 20px 170px 20px 26px;
+}
+
+
+
+
+
+
+
+
