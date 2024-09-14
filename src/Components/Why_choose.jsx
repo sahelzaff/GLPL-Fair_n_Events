@@ -79,7 +79,7 @@ const Why_choose = () => {
                                     className='text-white flex flex-row items-start gap-2 pb-5'
                                     initial={{ opacity: 0, x: -50 }}
                                     animate={isInView ? { opacity: 1, x: 30 } : {}}
-                                    transition={{ duration: 0.8, ease: 'easeOut', delay: 0.7 }}
+                                    transition={{ duration: 0.8, ease: 'easeOut', delay: 0.5 }}
                                 >
                                     <h3 className='text-6xl font-outfit font-bold'>1</h3>
                                     <p className='font-poppins text-[16px] text-start pt-2'>
@@ -90,7 +90,7 @@ const Why_choose = () => {
                                     className='text-white flex flex-row items-start gap-2 pb-5'
                                     initial={{ opacity: 0, x: -50 }}
                                     animate={isInView ? { opacity: 1, x: 30 } : {}}
-                                    transition={{ duration: 0.8, ease: 'easeOut', delay: 1 }}
+                                    transition={{ duration: 0.8, ease: 'easeOut', delay: 0.8 }}
                                 >
                                     <h3 className='text-6xl font-outfit font-bold'>2</h3>
                                     <p className='font-poppins text-[16px] text-start pt-2'>
@@ -101,7 +101,7 @@ const Why_choose = () => {
                                     className='text-white flex flex-row items-start gap-2 pb-5'
                                     initial={{ opacity: 0, x: -50 }}
                                     animate={isInView ? { opacity: 1, x: 30 } : {}}
-                                    transition={{ duration: 0.8, ease: 'easeOut', delay: 1.3 }}
+                                    transition={{ duration: 0.8, ease: 'easeOut', delay: 1.1 }}
                                 >
                                     <h3 className='text-6xl font-outfit font-bold'>3</h3>
                                     <p className='font-poppins text-[16px] text-start pt-2'>
@@ -114,7 +114,7 @@ const Why_choose = () => {
 
                             initial={{ opacity: 0, y: 50 }}
                             animate={isInView ? { opacity: 1, y: 0, x:0 } : {}}
-                            transition={{ duration: 0.8, ease: 'easeOut', delay: 1.5}}
+                            transition={{ duration: 0.8, ease: 'easeOut', delay: 1.2}}
                         >
                             <h2 className='font-outfit text-2xl font-semibold pt-8 text-white pb-2 text-start'>
                                 Let's Create Something Extraordinary Together
