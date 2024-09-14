@@ -15,6 +15,7 @@ const assets = {
     vector_1: 'assets/vector_1.mp4',
     Sequence_01: 'assets/Sequence_01.mp4',
     fair_and_events_animation1: 'assets/fair_and_events_animation1.mp4',
+    Animation_1: 'assets/Animation_1.mp4',
 
 };
 

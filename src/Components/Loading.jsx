@@ -1,4 +1,3 @@
-// Components/Loading.js
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import assets from '../../public/assets/assets';
@@ -34,7 +33,7 @@ const Loading = ({ onComplete }) => {
       }}
     >
       <video
-        src={assets.fair_and_events_animation1} 
+        src={assets.Animation_1} 
         autoPlay
         muted
         loop
@@ -44,6 +43,7 @@ const Loading = ({ onComplete }) => {
           left: 0,
           width: '100%',
           height: '100%',
+          scale:'50%',
           objectFit: 'cover', 
         }}
       />
